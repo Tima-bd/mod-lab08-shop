@@ -17,7 +17,7 @@ TEST(test2, unservedCustomers) {
 }
 
 TEST(test3, avgQueueLen) {
-	Shop shop(1, 50, 50, 1, 4, 50);
+	Shop shop(1, 50, 30, 1, 4, 50);
 	shop.InitShop();
 	int result = shop.spareTimeCount;
 	EXPECT_EQ(result, 0);
