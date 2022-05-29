@@ -16,14 +16,7 @@ TEST(test2, unservedCustomers) {
 	EXPECT_EQ(result, 0);
 }
 
-TEST(test3, avgQueueLen) {
-	Shop shop(1, 50, 30, 1, 4, 50);
-	shop.InitShop();
-	int result = shop.spareTimeCount;
-	EXPECT_EQ(result, 0);
-}
-
-TEST(test4, allRequestsServed) {
+TEST(test3, allRequestsServed) {
 	Shop shop(2, 50, 40, 5, 4, 20);
 	shop.InitShop();
 	int result = shop.servedCustomers + shop.unservedCustomers;
